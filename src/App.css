@@ -1,38 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); /* Cute and professional font */
+* {
+  background-color: #f0f4f8; /* Soft background color */
+  color: #333; /* Dark text color for readability */
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; /* Cuter and modern font */
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: auto;
+  flex-direction: column;
+  padding-top: 20px;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px; /* Slightly larger for emphasis */
+  font-weight: 600;
+  color: #2a5298; /* Soft blue for heading */
+  text-shadow: 1px 1px 4px rgba(42, 82, 152, 0.3); /* Subtle shadow effect */
+}
+
+.ip {
+  margin: 15px 0;
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #ced4da; /* Neutral border */
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #ffffff; /* Light background */
+  color: #495057;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.ip:focus {
+  border-color: #2a5298; /* Same as heading for visual harmony */
+}
+
+.ip::placeholder {
+  color: #adb5bd;
+  opacity: 0.8;
+}
+
+.records {
+  margin: 10px 0;
+  width: 60%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-color: #2a5298;
+  background-color: #f8f9fa; /* Light table background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+ 
+th {
+  background-color: #2a5298;
+  color: #dee2e6;
+}
+
+tr:nth-child(even) {
+  background-color: #d0e6f7; /* Light sky blue for even rows */
+}
+
+tr:hover {
+  background-color: #a9cfe7; /* Slightly darker blue for hover effect */
+}
+
+button {
+  background-color: #4CAF50; /* Green for natural look */
   color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #388e3c; /* Darker green on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.comments {
+  text-align: 'center';
+  height: '100vh';
+  margin: auto;
+  font-size: 50px;
+  color: #2a5298;
 }
